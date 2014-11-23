@@ -72,9 +72,9 @@ class VivWorkspace(e_mem.MemoryObject, viv_base.VivWorkspaceCore):
         self.config = e_config.EnviConfig( filename=cfgpath, defaults=defconfig, docs=docconfig )
 
         # Ideally, *none* of these are modified except by _handleFOO funcs...
-        self.segments = []
         self.exports = []
         self.imports = []
+        self.segments = []
         self.codeblocks = []
         self.relocations = []
         self._dead_data = []
